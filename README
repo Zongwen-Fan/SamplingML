@@ -1,2 +1,6 @@
 # The IoT Network Intrusion Dataset can be downloaded from https://ieee-dataport.org/open-access/iot-network-intrusion-dataset
 
+# Parameter tuning
+In this paper, the grid search is used with 10-fold cross-validation in the machine-learning models for parameter tuning. To be specific, for the DT, candidate values of [3, 4, 5] were considered for the maximum tree depth. For the MLP, candidate values of [100, 200, 300] for the neuron number in the hidden layer and [100, 200, 300] for the maximum iterations were considered. For the ensemble models (the RF, XGBoost, and CatBoost), candidate values of [10, 100, 200] for the number of estimators and [3, 4, 5] for the maximum tree depth in each estimator were considered. The final results are obtained based on the models trained using the optimal hyperparameters.
+
+# The optimal hyper-paramters are used for the final prediction as given in the jupyter notebook files.
